@@ -2,45 +2,46 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Github, ExternalLink, Code2 } from "lucide-react";
+import projectsIllustration from "@/assets/projects-illustration.jpg";
 
 const projects = [
   {
     id: 1,
-    title: "E-Commerce Platform",
-    description: "Une plateforme e-commerce complète avec panier, paiements et gestion des commandes.",
-    image: "/placeholder.svg",
-    technologies: ["React", "TypeScript", "Stripe", "Supabase"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
+    title: "Portfolio Moderne",
+    description: "Portfolio professionnel développé avec React, TypeScript et Tailwind CSS. Design moderne avec animations fluides.",
+    image: projectsIllustration,
+    technologies: ["React", "TypeScript", "Tailwind CSS", "Vite"],
+    githubUrl: "https://github.com/Lyde96",
+    liveUrl: "https://lyderic-portfolio.com",
     featured: true
   },
   {
     id: 2,
-    title: "Dashboard Analytics",
-    description: "Tableau de bord pour visualiser des données en temps réel avec graphiques interactifs.",
-    image: "/placeholder.svg",
-    technologies: ["Next.js", "Chart.js", "Prisma", "PostgreSQL"],
-    githubUrl: "https://github.com",
+    title: "Application E-Commerce",
+    description: "Plateforme e-commerce complète avec panier, paiements Stripe et gestion des commandes en temps réel.",
+    image: projectsIllustration,
+    technologies: ["React", "Node.js", "Stripe", "Supabase"],
+    githubUrl: "https://github.com/Lyde96",
     liveUrl: "https://example.com",
     featured: true
   },
   {
     id: 3,
-    title: "Chat Application",
-    description: "Application de messagerie en temps réel avec salles de discussion et notifications.",
-    image: "/placeholder.svg",
-    technologies: ["React", "Socket.io", "Node.js", "MongoDB"],
-    githubUrl: "https://github.com",
+    title: "Dashboard Analytics",
+    description: "Tableau de bord pour visualiser des données en temps réel avec graphiques interactifs et KPIs.",
+    image: projectsIllustration,
+    technologies: ["React", "Chart.js", "TypeScript", "PostgreSQL"],
+    githubUrl: "https://github.com/Lyde96",
     liveUrl: "https://example.com",
     featured: false
   },
   {
     id: 4,
-    title: "Task Manager",
-    description: "Gestionnaire de tâches collaboratif avec système de notifications et rappels.",
-    image: "/placeholder.svg",
-    technologies: ["Vue.js", "Firebase", "Vuetify", "PWA"],
-    githubUrl: "https://github.com",
+    title: "Chat Application",
+    description: "Application de messagerie en temps réel avec salles de discussion et notifications push.",
+    image: projectsIllustration,
+    technologies: ["React", "Socket.io", "Node.js", "MongoDB"],
+    githubUrl: "https://github.com/Lyde96",
     liveUrl: "https://example.com",
     featured: false
   }

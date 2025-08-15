@@ -3,7 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Github, Linkedin } from "lucide-react";
+import contactIllustration from "@/assets/contact-illustration.jpg";
 
 const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
@@ -37,32 +38,58 @@ const Contact = () => {
             
             <div className="space-y-4">
               <div className="flex items-center gap-4">
-                <div className="p-3 rounded-lg bg-primary/10">
+                <div className="p-3 rounded-lg bg-primary/10 shadow-glow">
                   <Mail className="h-5 w-5 text-primary" />
                 </div>
                 <div>
                   <p className="font-medium">Email</p>
-                  <p className="text-muted-foreground">votre.email@example.com</p>
+                  <p className="text-muted-foreground">lyderic.yabada@email.com</p>
                 </div>
               </div>
               
               <div className="flex items-center gap-4">
-                <div className="p-3 rounded-lg bg-primary/10">
-                  <Phone className="h-5 w-5 text-primary" />
+                <div className="p-3 rounded-lg bg-secondary/10 shadow-secondary">
+                  <Phone className="h-5 w-5 text-secondary" />
                 </div>
                 <div>
                   <p className="font-medium">Téléphone</p>
-                  <p className="text-muted-foreground">+33 6 12 34 56 78</p>
+                  <p className="text-muted-foreground">+32 492 43 84 63</p>
                 </div>
               </div>
               
               <div className="flex items-center gap-4">
-                <div className="p-3 rounded-lg bg-primary/10">
-                  <MapPin className="h-5 w-5 text-primary" />
+                <div className="p-3 rounded-lg bg-accent/10 shadow-accent">
+                  <MapPin className="h-5 w-5 text-accent" />
                 </div>
                 <div>
                   <p className="font-medium">Localisation</p>
-                  <p className="text-muted-foreground">Paris, France</p>
+                  <p className="text-muted-foreground">Bruxelles, Belgique</p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-4">
+                <div className="p-3 rounded-lg bg-primary/10 shadow-glow">
+                  <Github className="h-5 w-5 text-primary" />
+                </div>
+                <div>
+                  <p className="font-medium">GitHub</p>
+                  <a href="https://github.com/Lyde96" target="_blank" rel="noopener noreferrer" 
+                     className="text-muted-foreground hover:text-primary transition-colors">
+                    github.com/Lyde96
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-4">
+                <div className="p-3 rounded-lg bg-secondary/10 shadow-secondary">
+                  <Linkedin className="h-5 w-5 text-secondary" />
+                </div>
+                <div>
+                  <p className="font-medium">LinkedIn</p>
+                  <a href="https://linkedin.com/in/lyderic-yabada" target="_blank" rel="noopener noreferrer"
+                     className="text-muted-foreground hover:text-secondary transition-colors">
+                    Lydéric Yabada
+                  </a>
                 </div>
               </div>
             </div>

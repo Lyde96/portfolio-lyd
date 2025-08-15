@@ -75,10 +75,13 @@ export default {
 			backgroundImage: {
 				'gradient-primary': 'var(--gradient-primary)',
 				'gradient-secondary': 'var(--gradient-secondary)',
-				'gradient-accent': 'var(--gradient-accent)'
+				'gradient-accent': 'var(--gradient-accent)',
+				'gradient-hero': 'var(--gradient-hero)'
 			},
 			boxShadow: {
-				'glow': 'var(--shadow-glow)'
+				'glow': 'var(--shadow-glow)',
+				'secondary': 'var(--shadow-secondary)',
+				'accent': 'var(--shadow-accent)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

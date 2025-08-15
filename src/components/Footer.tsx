@@ -10,20 +10,26 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8">
           {/* Brand */}
           <div>
-            <h3 className="text-xl font-bold text-gradient mb-4">Portfolio</h3>
+            <h3 className="text-xl font-bold text-gradient mb-4">Lydéric Yabada</h3>
             <p className="text-muted-foreground mb-4">
-              Développeur Full Stack passionné par l'innovation et la création 
+              Développeur Full Stack basé à Bruxelles, passionné par l'innovation et la création 
               d'applications web modernes et performantes.
             </p>
             <div className="flex gap-4">
-              <Button variant="ghost" size="icon" className="hover:text-primary">
-                <Github className="h-5 w-5" />
+              <Button variant="ghost" size="icon" className="hover:text-primary hover:shadow-glow" asChild>
+                <a href="https://github.com/Lyde96" target="_blank" rel="noopener noreferrer">
+                  <Github className="h-5 w-5" />
+                </a>
               </Button>
-              <Button variant="ghost" size="icon" className="hover:text-primary">
-                <Linkedin className="h-5 w-5" />
+              <Button variant="ghost" size="icon" className="hover:text-secondary hover:shadow-secondary" asChild>
+                <a href="https://linkedin.com/in/lyderic-yabada" target="_blank" rel="noopener noreferrer">
+                  <Linkedin className="h-5 w-5" />
+                </a>
               </Button>
-              <Button variant="ghost" size="icon" className="hover:text-primary">
-                <Mail className="h-5 w-5" />
+              <Button variant="ghost" size="icon" className="hover:text-accent hover:shadow-accent" asChild>
+                <a href="mailto:lyderic.yabada@email.com">
+                  <Mail className="h-5 w-5" />
+                </a>
               </Button>
             </div>
           </div>
@@ -59,19 +65,19 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Contact</h4>
             <div className="space-y-2 text-muted-foreground">
-              <p>votre.email@example.com</p>
-              <p>+33 6 12 34 56 78</p>
-              <p>Paris, France</p>
+              <p>lyderic.yabada@email.com</p>
+              <p>+32 492 43 84 63</p>
+              <p>Bruxelles, Belgique</p>
             </div>
           </div>
         </div>
 
         <div className="border-t border-border mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-muted-foreground text-sm">
-            © {currentYear} Portfolio. Tous droits réservés.
+            © {currentYear} Lydéric Yabada. Tous droits réservés.
           </p>
           <p className="text-muted-foreground text-sm flex items-center gap-1 mt-4 md:mt-0">
-            Développé avec <Heart className="h-4 w-4 text-red-500" fill="currentColor" /> et React
+            Développé avec <Heart className="h-4 w-4 text-secondary" fill="currentColor" /> et React
           </p>
         </div>
       </div>
