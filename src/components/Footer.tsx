@@ -11,10 +11,10 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <h3 className="text-xl font-bold text-gradient mb-4">Lydéric Yabada</h3>
-            <p className="text-muted-foreground mb-4">
-              Développeur Full Stack basé à Bruxelles, passionné par l'innovation et la création 
-              d'applications web modernes et performantes.
-            </p>
+              <p className="text-muted-foreground mb-4">
+                Développeur Full Stack basé à Bruxelles, passionné par l'innovation et la création 
+                d'applications web modernes et performantes.
+              </p>
             <div className="flex gap-4">
               <Button variant="ghost" size="icon" className="hover:text-primary hover:shadow-glow" asChild>
                 <a href="https://github.com/Lyde96" target="_blank" rel="noopener noreferrer">
@@ -27,7 +27,7 @@ const Footer = () => {
                 </a>
               </Button>
               <Button variant="ghost" size="icon" className="hover:text-accent hover:shadow-accent" asChild>
-                <a href="mailto:lyderic.yabada@email.com">
+                <a href="mailto:Lyde72@hotmail.com">
                   <Mail className="h-5 w-5" />
                 </a>
               </Button>
@@ -65,7 +65,7 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Contact</h4>
             <div className="space-y-2 text-muted-foreground">
-              <p>lyderic.yabada@email.com</p>
+              <p>Lyde72@hotmail.com</p>
               <p>+32 492 43 84 63</p>
               <p>Bruxelles, Belgique</p>
             </div>

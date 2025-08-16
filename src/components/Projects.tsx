@@ -2,14 +2,17 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Github, ExternalLink, Code2 } from "lucide-react";
-import projectsIllustration from "@/assets/projects-illustration.jpg";
+import portfolioProject from "@/assets/portfolio-project.jpg";
+import ecommerceProject from "@/assets/ecommerce-project.jpg";
+import dashboardProject from "@/assets/dashboard-project.jpg";
+import chatProject from "@/assets/chat-project.jpg";
 
 const projects = [
   {
     id: 1,
     title: "Portfolio Moderne",
     description: "Portfolio professionnel développé avec React, TypeScript et Tailwind CSS. Design moderne avec animations fluides.",
-    image: projectsIllustration,
+    image: portfolioProject,
     technologies: ["React", "TypeScript", "Tailwind CSS", "Vite"],
     githubUrl: "https://github.com/Lyde96",
     liveUrl: "https://lyderic-portfolio.com",
@@ -19,7 +22,7 @@ const projects = [
     id: 2,
     title: "Application E-Commerce",
     description: "Plateforme e-commerce complète avec panier, paiements Stripe et gestion des commandes en temps réel.",
-    image: projectsIllustration,
+    image: ecommerceProject,
     technologies: ["React", "Node.js", "Stripe", "Supabase"],
     githubUrl: "https://github.com/Lyde96",
     liveUrl: "https://example.com",
@@ -29,7 +32,7 @@ const projects = [
     id: 3,
     title: "Dashboard Analytics",
     description: "Tableau de bord pour visualiser des données en temps réel avec graphiques interactifs et KPIs.",
-    image: projectsIllustration,
+    image: dashboardProject,
     technologies: ["React", "Chart.js", "TypeScript", "PostgreSQL"],
     githubUrl: "https://github.com/Lyde96",
     liveUrl: "https://example.com",
@@ -39,7 +42,7 @@ const projects = [
     id: 4,
     title: "Chat Application",
     description: "Application de messagerie en temps réel avec salles de discussion et notifications push.",
-    image: projectsIllustration,
+    image: chatProject,
     technologies: ["React", "Socket.io", "Node.js", "MongoDB"],
     githubUrl: "https://github.com/Lyde96",
     liveUrl: "https://example.com",
