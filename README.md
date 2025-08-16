@@ -14,10 +14,10 @@ Un portfolio moderne et responsive mettant en avant :
 
 - **React 18** - Framework frontend
 - **TypeScript** - Typage statique
-- **Tailwind CSS** - Framework CSS utilitaire
+- **Tailwind CSS** - Framework CSS utilitaires
 - **Vite** - Outil de build moderne
 - **shadcn/ui** - Composants UI
-- **Lucide React** - Icônes
+- **Lucide React** - Icône
 - **React Router** - Navigation
 
 ## 📦 Installation
