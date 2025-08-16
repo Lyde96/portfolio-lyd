@@ -1,73 +1,58 @@
-# Welcome to your Lovable project
+# Portfolio - Lydéric Yabada
 
-## Project info
+Portfolio professionnel moderne développé avec React, TypeScript et Tailwind CSS. Ce site présente mes compétences en développement Full Stack et mes projets.
 
-**URL**: https://lovable.dev/projects/ddb28a2f-c327-46a9-ac9b-2924ba83fc33
+## 🚀 Aperçu
 
-## How can I edit this code?
+Un portfolio moderne et responsive mettant en avant :
+- Mes compétences techniques en développement web
+- Une sélection de projets représentatifs
+- Une interface utilisateur élégante avec animations fluides
+- Un design optimisé pour mobile et desktop
 
-There are several ways of editing your application.
+## 🛠️ Technologies utilisées
 
-**Use Lovable**
+- **React 18** - Framework frontend
+- **TypeScript** - Typage statique
+- **Tailwind CSS** - Framework CSS utilitaire
+- **Vite** - Outil de build moderne
+- **shadcn/ui** - Composants UI
+- **Lucide React** - Icônes
+- **React Router** - Navigation
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/ddb28a2f-c327-46a9-ac9b-2924ba83fc33) and start prompting.
+## 📦 Installation
 
-Changes made via Lovable will be committed automatically to this repo.
+```bash
+# Cloner le repository
+git clone <URL_DU_REPO>
 
-**Use your preferred IDE**
+# Naviguer vers le dossier
+cd portfolio-lyderic
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+# Installer les dépendances
+npm install
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Lancer le serveur de développement
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## 🏗️ Scripts disponibles
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```bash
+npm run dev      # Serveur de développement
+npm run build    # Build de production
+npm run preview  # Prévisualiser le build
+npm run lint     # Linter le code
+```
 
-**Use GitHub Codespaces**
+## 📱 Contact
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- **Email** : Lyde72@hotmail.com
+- **Téléphone** : +32 492 43 84 63
+- **Localisation** : Bruxelles, Belgique
+- **GitHub** : [Lyde96](https://github.com/Lyde96)
+- **LinkedIn** : [Lydéric Yabada](https://linkedin.com/in/lyderic-yabada)
 
-## What technologies are used for this project?
+## 📄 Licence
 
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/ddb28a2f-c327-46a9-ac9b-2924ba83fc33) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Ce projet est sous licence MIT.
