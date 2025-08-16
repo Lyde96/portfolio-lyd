@@ -82,7 +82,7 @@ const Hero = () => {
               className="hover:text-accent transition-colors hover:bg-accent/10 hover:shadow-accent"
               asChild
             >
-              <a href="mailto:lyderic.yabada@email.com">
+              <a href="mailto:Lyde72@hotmail.com">
                 <Mail className="h-6 w-6" />
               </a>
             </Button>

@@ -43,7 +43,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="font-medium">Email</p>
-                  <p className="text-muted-foreground">lyderic.yabada@email.com</p>
+                  <p className="text-muted-foreground">Lyde72@hotmail.com</p>
                 </div>
               </div>
               
