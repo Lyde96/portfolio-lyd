@@ -30,12 +30,12 @@ const projects = [
   },
   {
     id: 3,
-    title: "Dashboard Analytics",
-    description: "Tableau de bord pour visualiser des données en temps réel avec graphiques interactifs et KPIs.",
+    title: "API REST Documentation",
+    description: "API REST complète avec authentification JWT, documentation Swagger et tests automatisés. Architecture microservices.",
     image: dashboardProject,
-    technologies: ["React", "Chart.js", "TypeScript", "PostgreSQL"],
+    technologies: ["Node.js", "Express", "Swagger", "Jest", "Docker"],
     githubUrl: "https://github.com/Lyde96",
-    liveUrl: "https://example.com",
+    liveUrl: "https://api-docs.example.com",
     featured: false
   },
   {
@@ -46,6 +46,46 @@ const projects = [
     technologies: ["React", "Socket.io", "Node.js", "MongoDB"],
     githubUrl: "https://github.com/Lyde96",
     liveUrl: "https://example.com",
+    featured: false
+  },
+  {
+    id: 5,
+    title: "App Mobile React Native",
+    description: "Application mobile cross-platform avec authentification biométrique, notifications push et mode hors-ligne.",
+    image: portfolioProject,
+    technologies: ["React Native", "Expo", "AsyncStorage", "Push Notifications"],
+    githubUrl: "https://github.com/Lyde96",
+    liveUrl: "https://play.google.com/store",
+    featured: false
+  },
+  {
+    id: 6,
+    title: "Assistant IA Conversationnel",
+    description: "Chatbot intelligent avec traitement du langage naturel, mémoire contextuelle et intégration API OpenAI.",
+    image: chatProject,
+    technologies: ["Python", "OpenAI", "FastAPI", "Vector DB", "LangChain"],
+    githubUrl: "https://github.com/Lyde96",
+    liveUrl: "https://ai-assistant.example.com",
+    featured: false
+  },
+  {
+    id: 7,
+    title: "Système de Monitoring",
+    description: "Dashboard de monitoring en temps réel avec alertes, métriques système et logs centralisés.",
+    image: dashboardProject,
+    technologies: ["Grafana", "Prometheus", "Docker", "Kubernetes", "Elasticsearch"],
+    githubUrl: "https://github.com/Lyde96",
+    liveUrl: "https://monitoring.example.com",
+    featured: false
+  },
+  {
+    id: 8,
+    title: "Blockchain DApp",
+    description: "Application décentralisée sur Ethereum avec smart contracts, wallet integration et transactions sécurisées.",
+    image: ecommerceProject,
+    technologies: ["Solidity", "Web3.js", "Ethereum", "MetaMask", "Hardhat"],
+    githubUrl: "https://github.com/Lyde96",
+    liveUrl: "https://dapp.example.com",
     featured: false
   }
 ];
