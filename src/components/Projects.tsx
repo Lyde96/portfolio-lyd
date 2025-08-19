@@ -146,11 +146,20 @@ const Projects = () => {
                 </div>
                 
                 <div className="flex gap-3">
-                  <Button variant="outline" size="sm" className="flex-1">
+                  <Button 
+                    variant="outline" 
+                    size="sm" 
+                    className="flex-1"
+                    onClick={() => window.open(project.githubUrl, '_blank')}
+                  >
                     <Github className="mr-2 h-4 w-4" />
                     Code
                   </Button>
-                  <Button size="sm" className="flex-1 btn-gradient">
+                  <Button 
+                    size="sm" 
+                    className="flex-1 btn-gradient"
+                    onClick={() => window.open(project.liveUrl, '_blank')}
+                  >
                     <ExternalLink className="mr-2 h-4 w-4" />
                     Demo
                   </Button>
