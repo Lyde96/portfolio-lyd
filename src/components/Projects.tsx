@@ -146,35 +146,27 @@ const Projects = () => {
                 </div>
                 
                 <div className="flex gap-3">
-                  <a 
-                    href={project.githubUrl} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
+                  <Button 
+                    variant="outline" 
+                    size="sm" 
                     className="flex-1"
+                    asChild
                   >
-                    <Button 
-                      variant="outline" 
-                      size="sm" 
-                      className="w-full"
-                    >
+                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
                       <Github className="mr-2 h-4 w-4" />
                       Code
-                    </Button>
-                  </a>
-                  <a 
-                    href={project.liveUrl} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="flex-1"
+                    </a>
+                  </Button>
+                  <Button 
+                    size="sm" 
+                    className="flex-1 btn-gradient"
+                    asChild
                   >
-                    <Button 
-                      size="sm" 
-                      className="w-full btn-gradient"
-                    >
+                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="mr-2 h-4 w-4" />
                       Demo
-                    </Button>
-                  </a>
+                    </a>
+                  </Button>
                 </div>
               </CardContent>
             </Card>
