@@ -150,22 +150,18 @@ const Projects = () => {
                     variant="outline" 
                     size="sm" 
                     className="flex-1"
-                    asChild
+                    onClick={() => window.open(project.githubUrl, '_blank')}
                   >
-                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                      <Github className="mr-2 h-4 w-4" />
-                      Code
-                    </a>
+                    <Github className="mr-2 h-4 w-4" />
+                    Code
                   </Button>
                   <Button 
                     size="sm" 
                     className="flex-1 btn-gradient"
-                    asChild
+                    onClick={() => window.open(project.liveUrl, '_blank')}
                   >
-                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="mr-2 h-4 w-4" />
-                      Demo
-                    </a>
+                    <ExternalLink className="mr-2 h-4 w-4" />
+                    Demo
                   </Button>
                 </div>
               </CardContent>
