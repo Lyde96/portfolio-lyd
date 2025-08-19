@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Moon, Sun } from "lucide-react";
 
@@ -6,6 +7,8 @@ const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isDark, setIsDark] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation();
+  const isTaskApp = location.pathname === '/task-app';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,7 +28,8 @@ const Navigation = () => {
     { label: "Accueil", href: "#home" },
     { label: "Projets", href: "#projects" },
     { label: "Compétences", href: "#skills" },
-    { label: "Contact", href: "#contact" }
+    { label: "Contact", href: "#contact" },
+    { label: "App Demo", href: "/task-app" }
   ];
 
   return (
@@ -36,19 +40,31 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <span className="text-2xl font-bold text-gradient">Portfolio</span>
+            <Link to="/" className="text-2xl font-bold text-gradient">
+              Portfolio
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
-              <a
-                key={item.label}
-                href={item.href}
-                className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
-              >
-                {item.label}
-              </a>
+              item.href.startsWith('/') ? (
+                <Link
+                  key={item.label}
+                  to={item.href}
+                  className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
+                >
+                  {item.label}
+                </Link>
+              ) : (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
+                >
+                  {item.label}
+                </a>
+              )
             ))}
           </div>
 
@@ -80,14 +96,25 @@ const Navigation = () => {
           <div className="md:hidden py-4 border-t border-border">
             <div className="flex flex-col space-y-4">
               {navItems.map((item) => (
-                <a
-                  key={item.label}
-                  href={item.href}
-                  onClick={() => setIsOpen(false)}
-                  className="text-foreground hover:text-primary transition-colors duration-200 font-medium py-2"
-                >
-                  {item.label}
-                </a>
+                item.href.startsWith('/') ? (
+                  <Link
+                    key={item.label}
+                    to={item.href}
+                    onClick={() => setIsOpen(false)}
+                    className="text-foreground hover:text-primary transition-colors duration-200 font-medium py-2"
+                  >
+                    {item.label}
+                  </Link>
+                ) : (
+                  <a
+                    key={item.label}
+                    href={item.href}
+                    onClick={() => setIsOpen(false)}
+                    className="text-foreground hover:text-primary transition-colors duration-200 font-medium py-2"
+                  >
+                    {item.label}
+                  </a>
+                )
               ))}
             </div>
           </div>
