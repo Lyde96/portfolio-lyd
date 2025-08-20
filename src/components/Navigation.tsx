@@ -30,7 +30,9 @@ const Navigation = () => {
     { label: "Compétences", href: "#skills" },
     { label: "Contact", href: "#contact" },
     { label: "App Demo", href: "/task-app" },
-    { label: "Finance", href: "/finance" }
+    { label: "Finance", href: "/finance" },
+    { label: "Crypto Tool", href: "/crypto-tool" },
+    { label: "Security Monitor", href: "/security-monitor" }
   ];
 
   return (
