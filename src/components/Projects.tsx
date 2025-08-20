@@ -6,6 +6,10 @@ import portfolioProject from "@/assets/portfolio-project.jpg";
 import ecommerceProject from "@/assets/ecommerce-project.jpg";
 import dashboardProject from "@/assets/dashboard-project.jpg";
 import chatProject from "@/assets/chat-project.jpg";
+import cryptoToolProject from "@/assets/crypto-tool-project.jpg";
+import securityMonitorProject from "@/assets/security-monitor-project.jpg";
+import taskManagerProject from "@/assets/task-manager-project.jpg";
+import financeManagerProject from "@/assets/finance-manager-project.jpg";
 
 const projects = [
   {
@@ -92,7 +96,7 @@ const projects = [
     id: 9,
     title: "Outil de Cryptographie",
     description: "Application de chiffrement/déchiffrement avec AES-256, RSA et hachage sécurisé. Interface intuitive pour la sécurité des données.",
-    image: dashboardProject,
+    image: cryptoToolProject,
     technologies: ["React", "TypeScript", "Web Crypto API", "AES", "SHA-256"],
     githubUrl: "#",
     liveUrl: "/crypto-tool",
@@ -102,7 +106,7 @@ const projects = [
     id: 10,
     title: "Moniteur de Sécurité",
     description: "Dashboard de monitoring cybersécurité avec analyse de logs, détection d'anomalies et alertes en temps réel.",
-    image: dashboardProject,
+    image: securityMonitorProject,
     technologies: ["React", "TypeScript", "Charts", "Security Analytics", "Real-time"],
     githubUrl: "#",
     liveUrl: "/security-monitor",
@@ -112,7 +116,7 @@ const projects = [
     id: 11,
     title: "Gestionnaire de Tâches",
     description: "Application complète de gestion de tâches avec priorités, catégories, et suivi de productivité.",
-    image: chatProject,
+    image: taskManagerProject,
     technologies: ["React", "TypeScript", "Local Storage", "Drag & Drop"],
     githubUrl: "#",
     liveUrl: "/task-app",
@@ -122,7 +126,7 @@ const projects = [
     id: 12,
     title: "Gestionnaire Financier",
     description: "Tableau de bord financier personnel avec suivi des dépenses, budgets et analyses détaillées.",
-    image: ecommerceProject,
+    image: financeManagerProject,
     technologies: ["React", "TypeScript", "Charts", "Financial Analytics"],
     githubUrl: "#",
     liveUrl: "/finance",
