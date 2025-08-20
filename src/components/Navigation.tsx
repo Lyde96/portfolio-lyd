@@ -29,7 +29,8 @@ const Navigation = () => {
     { label: "Projets", href: "#projects" },
     { label: "Compétences", href: "#skills" },
     { label: "Contact", href: "#contact" },
-    { label: "App Demo", href: "/task-app" }
+    { label: "App Demo", href: "/task-app" },
+    { label: "Finance", href: "/finance" }
   ];
 
   return (
