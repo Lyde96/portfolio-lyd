@@ -87,6 +87,46 @@ const projects = [
     githubUrl: "https://github.com/ethereum/web3.js",
     liveUrl: "https://remix.ethereum.org",
     featured: false
+  },
+  {
+    id: 9,
+    title: "Outil de Cryptographie",
+    description: "Application de chiffrement/déchiffrement avec AES-256, RSA et hachage sécurisé. Interface intuitive pour la sécurité des données.",
+    image: dashboardProject,
+    technologies: ["React", "TypeScript", "Web Crypto API", "AES", "SHA-256"],
+    githubUrl: "#",
+    liveUrl: "/crypto-tool",
+    featured: true
+  },
+  {
+    id: 10,
+    title: "Moniteur de Sécurité",
+    description: "Dashboard de monitoring cybersécurité avec analyse de logs, détection d'anomalies et alertes en temps réel.",
+    image: dashboardProject,
+    technologies: ["React", "TypeScript", "Charts", "Security Analytics", "Real-time"],
+    githubUrl: "#",
+    liveUrl: "/security-monitor",
+    featured: true
+  },
+  {
+    id: 11,
+    title: "Gestionnaire de Tâches",
+    description: "Application complète de gestion de tâches avec priorités, catégories, et suivi de productivité.",
+    image: chatProject,
+    technologies: ["React", "TypeScript", "Local Storage", "Drag & Drop"],
+    githubUrl: "#",
+    liveUrl: "/task-app",
+    featured: false
+  },
+  {
+    id: 12,
+    title: "Gestionnaire Financier",
+    description: "Tableau de bord financier personnel avec suivi des dépenses, budgets et analyses détaillées.",
+    image: ecommerceProject,
+    technologies: ["React", "TypeScript", "Charts", "Financial Analytics"],
+    githubUrl: "#",
+    liveUrl: "/finance",
+    featured: false
   }
 ];
 

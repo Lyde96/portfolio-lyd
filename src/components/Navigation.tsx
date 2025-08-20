@@ -28,11 +28,7 @@ const Navigation = () => {
     { label: "Accueil", href: "#home" },
     { label: "Projets", href: "#projects" },
     { label: "Compétences", href: "#skills" },
-    { label: "Contact", href: "#contact" },
-    { label: "App Demo", href: "/task-app" },
-    { label: "Finance", href: "/finance" },
-    { label: "Crypto Tool", href: "/crypto-tool" },
-    { label: "Security Monitor", href: "/security-monitor" }
+    { label: "Contact", href: "#contact" }
   ];
 
   return (
