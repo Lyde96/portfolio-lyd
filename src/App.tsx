@@ -4,7 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "next-themes";
-import Index from "./pages/Index";
+import EcommerceHome from "./pages/EcommerceHome";
 import TaskApp from "./pages/TaskApp";
 import FinanceManager from "./pages/FinanceManager";
 import CryptoTool from "./pages/CryptoTool";
@@ -24,7 +24,7 @@ const App = () => (
       <TooltipProvider>
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Index />} />
+            <Route path="/" element={<EcommerceHome />} />
             <Route path="/task-app" element={<TaskApp />} />
             <Route path="/finance" element={<FinanceManager />} />
             <Route path="/crypto-tool" element={<CryptoTool />} />
