@@ -191,35 +191,154 @@ const EcommerceHome = () => {
         )}
       </header>
 
-      {/* Hero Section */}
-      <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-background via-background/90 to-background/80" />
-        <div className="absolute inset-0">
-          <img 
-            src="/lovable-uploads/b7aa5aa7-bd75-4087-b631-fa2027068631.png" 
-            alt="LVND Brand"
-            className="w-full h-full object-cover opacity-20"
-          />
-        </div>
-        <div className="relative z-10 text-center space-y-6 max-w-4xl mx-auto px-4">
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
-            LVND<span className="text-2xl md:text-4xl align-super">®</span>
-          </h1>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-            EST.2017
-          </p>
-          <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Marque streetwear authentique depuis 2017. Découvrez notre collection exclusive de vêtements urbains premium qui reflètent votre style unique.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-            <Button size="lg" className="w-full sm:w-auto">
-              Découvrir la Collection
-            </Button>
-            <Button variant="outline" size="lg" className="w-full sm:w-auto">
-              Nouveautés
-            </Button>
+      {/* Hero Carousel Section */}
+      <section id="home" className="relative h-screen overflow-hidden">
+        <Carousel className="w-full h-full">
+          <CarouselContent className="h-full">
+            {/* Slide 1 - Logo Brand */}
+            <CarouselItem className="relative h-full">
+              <div className="absolute inset-0 bg-gradient-to-br from-background via-background/90 to-background/80" />
+              <div className="absolute inset-0">
+                <img 
+                  src="/lovable-uploads/b7aa5aa7-bd75-4087-b631-fa2027068631.png" 
+                  alt="LVND Brand Logo"
+                  className="w-full h-full object-cover opacity-30"
+                />
+              </div>
+              <div className="relative z-10 h-full flex items-center justify-center">
+                <div className="text-center space-y-6 max-w-4xl mx-auto px-4">
+                  <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
+                    LVND<span className="text-2xl md:text-4xl align-super">®</span>
+                  </h1>
+                  <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
+                    EST.2017
+                  </p>
+                  <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+                    Marque streetwear authentique depuis 2017. Découvrez notre collection exclusive de vêtements urbains premium qui reflètent votre style unique.
+                  </p>
+                  <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
+                    <Button size="lg" className="w-full sm:w-auto">
+                      Découvrir la Collection
+                    </Button>
+                    <Button variant="outline" size="lg" className="w-full sm:w-auto">
+                      Nouveautés
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </CarouselItem>
+
+            {/* Slide 2 - T-Shirt Collection */}
+            <CarouselItem className="relative h-full">
+              <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent" />
+              <div className="absolute inset-0">
+                <img 
+                  src="/lovable-uploads/13b9fa19-c977-4181-85cf-45d3cc0fc56b.png" 
+                  alt="Collection T-Shirts LVND"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="relative z-10 h-full flex items-center">
+                <div className="container">
+                  <div className="max-w-2xl text-white space-y-6">
+                    <h2 className="text-4xl md:text-6xl font-bold">
+                      T-Shirts Premium
+                    </h2>
+                    <p className="text-lg md:text-xl opacity-90">
+                      Designs exclusifs avec empreinte LVND. Qualité premium et confort optimal pour votre style urbain.
+                    </p>
+                    <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                      <Button size="lg" variant="secondary">
+                        Voir les T-Shirts
+                      </Button>
+                      <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-black">
+                        À partir de 45€
+                      </Button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </CarouselItem>
+
+            {/* Slide 3 - Hoodies Collection */}
+            <CarouselItem className="relative h-full">
+              <div className="absolute inset-0 bg-gradient-to-l from-black/70 via-black/50 to-transparent" />
+              <div className="absolute inset-0">
+                <img 
+                  src="/lovable-uploads/875285f7-60dd-4206-a3ea-bf880f08a327.png" 
+                  alt="Collection Hoodies LVND"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="relative z-10 h-full flex items-center justify-end">
+                <div className="container">
+                  <div className="max-w-2xl text-white space-y-6 ml-auto text-right">
+                    <h2 className="text-4xl md:text-6xl font-bold">
+                      Hoodies Signature
+                    </h2>
+                    <p className="text-lg md:text-xl opacity-90">
+                      Ensemble streetwear complet. Qualité exceptionnelle et style authentique pour un look urbain parfait.
+                    </p>
+                    <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-end">
+                      <Button size="lg" variant="secondary">
+                        Voir les Ensembles
+                      </Button>
+                      <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-black">
+                        À partir de 85€
+                      </Button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </CarouselItem>
+
+            {/* Slide 4 - Accessoires */}
+            <CarouselItem className="relative h-full">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+              <div className="absolute inset-0">
+                <img 
+                  src="/lovable-uploads/7219e149-cebc-4271-b580-f2824b96ea39.png" 
+                  alt="Accessoires LVND"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="relative z-10 h-full flex items-end pb-20">
+                <div className="container">
+                  <div className="max-w-2xl text-white space-y-6">
+                    <h2 className="text-4xl md:text-6xl font-bold">
+                      Accessoires Urban
+                    </h2>
+                    <p className="text-lg md:text-xl opacity-90">
+                      Complétez votre look avec nos sacs et accessoires premium. Design moderne et fonctionnalité urbaine.
+                    </p>
+                    <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                      <Button size="lg" variant="secondary">
+                        Voir les Accessoires
+                      </Button>
+                      <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-black">
+                        À partir de 65€
+                      </Button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </CarouselItem>
+          </CarouselContent>
+          
+          {/* Navigation Arrows */}
+          <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20" />
+          <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20" />
+          
+          {/* Dots Indicator */}
+          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex space-x-2">
+            {[...Array(4)].map((_, index) => (
+              <div 
+                key={index}
+                className="w-2 h-2 rounded-full bg-white/50 hover:bg-white/80 cursor-pointer transition-colors"
+              />
+            ))}
           </div>
-        </div>
+        </Carousel>
       </section>
 
       {/* Featured Products */}
