@@ -20,20 +20,20 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    /* Vibrant color system */
-    --primary: 193 100% 50%;
+    /* Orange, gray and black color system */
+    --primary: 25 95% 53%;
     --primary-foreground: 0 0% 100%;
-    --primary-hover: 193 100% 60%;
+    --primary-hover: 25 95% 63%;
 
-    --secondary: 320 100% 50%;
+    --secondary: 0 0% 45%;
     --secondary-foreground: 0 0% 100%;
 
-    --accent: 280 100% 65%;
+    --accent: 0 0% 20%;
     --accent-foreground: 0 0% 100%;
 
-    /* Muted colors */
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted colors - more gray */
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 46%;
 
     /* Status colors */
     --destructive: 0 84.2% 60.2%;
@@ -42,24 +42,24 @@
     --success-foreground: 0 0% 100%;
 
     /* Borders and inputs */
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 193 100% 50%;
+    --border: 0 0% 91%;
+    --input: 0 0% 91%;
+    --ring: 25 95% 53%;
 
-    /* Vibrant gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(193 100% 50%), hsl(320 100% 50%));
-    --gradient-secondary: linear-gradient(135deg, hsl(280 100% 65%), hsl(193 100% 50%));
-    --gradient-accent: linear-gradient(135deg, hsl(320 100% 50%), hsl(280 100% 65%));
-    --gradient-hero: radial-gradient(ellipse at center, hsl(193 100% 50% / 0.15), transparent 70%);
+    /* Orange, gray, black gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(25 95% 53%), hsl(0 0% 20%));
+    --gradient-secondary: linear-gradient(135deg, hsl(0 0% 45%), hsl(25 95% 53%));
+    --gradient-accent: linear-gradient(135deg, hsl(0 0% 20%), hsl(0 0% 45%));
+    --gradient-hero: radial-gradient(ellipse at center, hsl(25 95% 53% / 0.15), transparent 70%);
 
-    /* Vibrant shadows */
+    /* Orange and gray shadows */
     --shadow-sm: 0 1px 2px 0 hsl(0 0% 0% / 0.05);
     --shadow-md: 0 4px 6px -1px hsl(0 0% 0% / 0.1);
     --shadow-lg: 0 10px 15px -3px hsl(0 0% 0% / 0.1);
     --shadow-xl: 0 20px 25px -5px hsl(0 0% 0% / 0.1);
-    --shadow-glow: 0 0 40px hsl(193 100% 50% / 0.4);
-    --shadow-secondary: 0 0 30px hsl(320 100% 50% / 0.3);
-    --shadow-accent: 0 0 20px hsl(280 100% 65% / 0.4);
+    --shadow-glow: 0 0 40px hsl(25 95% 53% / 0.4);
+    --shadow-secondary: 0 0 30px hsl(0 0% 45% / 0.3);
+    --shadow-accent: 0 0 20px hsl(0 0% 20% / 0.4);
 
     /* Border radius */
     --radius: 0.75rem;
@@ -96,16 +96,16 @@
     --popover: 224 15% 12%;
     --popover-foreground: 210 40% 98%;
 
-    /* Dark mode vibrant colors */
-    --primary: 193 100% 50%;
-    --primary-foreground: 220 13% 9%;
-    --primary-hover: 193 100% 60%;
+    /* Dark mode orange, gray, black colors */
+    --primary: 25 95% 53%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 25 95% 63%;
 
-    --secondary: 320 100% 50%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 0 0% 65%;
+    --secondary-foreground: 0 0% 10%;
 
-    --accent: 280 100% 65%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 0 0% 80%;
+    --accent-foreground: 0 0% 10%;
 
     /* Dark mode muted */
     --muted: 226 17% 15%;
@@ -118,20 +118,20 @@
     --success-foreground: 0 0% 100%;
 
     /* Dark mode borders */
-    --border: 226 17% 15%;
-    --input: 226 17% 15%;
-    --ring: 193 100% 50%;
+    --border: 0 0% 25%;
+    --input: 0 0% 25%;
+    --ring: 25 95% 53%;
 
-    /* Dark mode vibrant gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(193 100% 50%), hsl(320 100% 50%));
-    --gradient-secondary: linear-gradient(135deg, hsl(280 100% 65%), hsl(193 100% 50%));
-    --gradient-accent: linear-gradient(135deg, hsl(320 100% 50%), hsl(280 100% 65%));
-    --gradient-hero: radial-gradient(ellipse at center, hsl(193 100% 50% / 0.15), transparent 70%);
+    /* Dark mode orange, gray, black gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(25 95% 53%), hsl(0 0% 20%));
+    --gradient-secondary: linear-gradient(135deg, hsl(0 0% 65%), hsl(25 95% 53%));
+    --gradient-accent: linear-gradient(135deg, hsl(0 0% 20%), hsl(0 0% 65%));
+    --gradient-hero: radial-gradient(ellipse at center, hsl(25 95% 53% / 0.15), transparent 70%);
 
-    /* Dark mode vibrant shadows */
-    --shadow-glow: 0 0 40px hsl(193 100% 50% / 0.4);
-    --shadow-secondary: 0 0 30px hsl(320 100% 50% / 0.3);
-    --shadow-accent: 0 0 20px hsl(280 100% 65% / 0.4);
+    /* Dark mode orange and gray shadows */
+    --shadow-glow: 0 0 40px hsl(25 95% 53% / 0.4);
+    --shadow-secondary: 0 0 30px hsl(0 0% 65% / 0.3);
+    --shadow-accent: 0 0 20px hsl(0 0% 20% / 0.4);
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
