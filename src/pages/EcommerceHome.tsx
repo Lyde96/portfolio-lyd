@@ -1,14 +1,25 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ShoppingCart, Heart, Search, Menu, X, Star, Filter } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent } from "@/components/ui/card";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, type CarouselApi } from "@/components/ui/carousel";
 
 const EcommerceHome = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState("all");
+  const [api, setApi] = useState<CarouselApi>();
+
+  useEffect(() => {
+    if (!api) return;
+
+    const intervalId = setInterval(() => {
+      api.scrollNext();
+    }, 5000); // Change slide every 5 seconds
+
+    return () => clearInterval(intervalId);
+  }, [api]);
 
   const products = [
     {
@@ -193,7 +204,14 @@ const EcommerceHome = () => {
 
       {/* Hero Carousel Section */}
       <section id="home" className="relative h-screen overflow-hidden">
-        <Carousel className="w-full h-full">
+        <Carousel 
+          className="w-full h-full"
+          setApi={setApi}
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+        >
           <CarouselContent className="h-full">
             {/* Slide 1 - Logo Brand */}
             <CarouselItem className="relative h-full">
@@ -235,7 +253,7 @@ const EcommerceHome = () => {
                 <img 
                   src="/lovable-uploads/13b9fa19-c977-4181-85cf-45d3cc0fc56b.png" 
                   alt="Collection T-Shirts LVND"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-center"
                 />
               </div>
               <div className="relative z-10 h-full flex items-center">
@@ -267,7 +285,7 @@ const EcommerceHome = () => {
                 <img 
                   src="/lovable-uploads/875285f7-60dd-4206-a3ea-bf880f08a327.png" 
                   alt="Collection Hoodies LVND"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-center"
                 />
               </div>
               <div className="relative z-10 h-full flex items-center justify-end">
