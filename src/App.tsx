@@ -11,6 +11,7 @@ import EcommerceHome from "./pages/EcommerceHome";
 import CryptoTool from "./pages/CryptoTool";
 import SecurityMonitor from "./pages/SecurityMonitor";
 import FinanceManager from "./pages/FinanceManager";
+import APIDocumentation from "./pages/APIDocumentation";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -33,6 +34,7 @@ const App = () => (
             <Route path="/crypto-tool" element={<CryptoTool />} />
             <Route path="/security-monitor" element={<SecurityMonitor />} />
             <Route path="/finance" element={<FinanceManager />} />
+            <Route path="/api-docs" element={<APIDocumentation />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

@@ -38,8 +38,8 @@ const projects = [
     description: "API REST complète avec authentification JWT, documentation Swagger et tests automatisés. Architecture microservices.",
     image: dashboardProject,
     technologies: ["Node.js", "Express", "Swagger", "Jest", "Docker"],
-    githubUrl: "https://github.com/swagger-api/swagger-ui",
-    liveUrl: "https://petstore.swagger.io",
+    githubUrl: "#",
+    liveUrl: "/api-docs",
     featured: false
   },
   {
