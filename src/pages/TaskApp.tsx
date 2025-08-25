@@ -274,6 +274,10 @@ const TaskApp = () => {
               <User className="h-4 w-4" />
               {user.email}
             </Badge>
+            <Button variant="outline" onClick={() => navigate('/portfolio')}>
+              <User className="h-4 w-4 mr-2" />
+              Portfolio
+            </Button>
             <Button variant="outline" onClick={() => navigate('/projects')}>
               <Github className="h-4 w-4 mr-2" />
               Projets
