@@ -4,7 +4,8 @@ import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Checkbox } from "@/components/ui/checkbox";
-import { Trash2, Plus, LogOut, User, CheckCircle2, Clock, Users } from "lucide-react";
+import { Trash2, Plus, LogOut, User, CheckCircle2, Clock, Users, Github } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 
@@ -23,6 +24,7 @@ interface User {
 }
 
 const TaskApp = () => {
+  const navigate = useNavigate();
   const [user, setUser] = useState<User | null>(null);
   const [tasks, setTasks] = useState<Task[]>([]);
   const [newTask, setNewTask] = useState("");
@@ -272,6 +274,10 @@ const TaskApp = () => {
               <User className="h-4 w-4" />
               {user.email}
             </Badge>
+            <Button variant="outline" onClick={() => navigate('/projects')}>
+              <Github className="h-4 w-4 mr-2" />
+              Projets
+            </Button>
             <Button variant="outline" onClick={handleLogout}>
               <LogOut className="h-4 w-4 mr-2" />
               Déconnexion
