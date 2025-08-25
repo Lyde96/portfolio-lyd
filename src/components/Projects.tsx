@@ -18,18 +18,18 @@ const projects = [
     description: "Portfolio professionnel développé avec React, TypeScript et Tailwind CSS. Design moderne avec animations fluides.",
     image: portfolioProject,
     technologies: ["React", "TypeScript", "Tailwind CSS", "Vite"],
-    githubUrl: "https://github.com/vercel/next.js",
-    liveUrl: "https://nextjs.org",
+    githubUrl: "#",
+    liveUrl: "/portfolio",
     featured: true
   },
   {
     id: 2,
-    title: "Application E-Commerce",
-    description: "Plateforme e-commerce complète avec panier, paiements Stripe et gestion des commandes en temps réel.",
+    title: "LVND - Application E-Commerce",
+    description: "Plateforme e-commerce complète avec panier, paiements et gestion des commandes. Marque de streetwear moderne.",
     image: ecommerceProject,
-    technologies: ["React", "Node.js", "Stripe", "Supabase"],
-    githubUrl: "https://github.com/supabase/supabase",
-    liveUrl: "https://supabase.com",
+    technologies: ["React", "TypeScript", "Tailwind CSS", "Supabase"],
+    githubUrl: "#",
+    liveUrl: "/ecommerce",
     featured: true
   },
   {
@@ -40,56 +40,6 @@ const projects = [
     technologies: ["Node.js", "Express", "Swagger", "Jest", "Docker"],
     githubUrl: "https://github.com/swagger-api/swagger-ui",
     liveUrl: "https://petstore.swagger.io",
-    featured: false
-  },
-  {
-    id: 4,
-    title: "Chat Application",
-    description: "Application de messagerie en temps réel avec salles de discussion et notifications push.",
-    image: chatProject,
-    technologies: ["React", "Socket.io", "Node.js", "MongoDB"],
-    githubUrl: "https://github.com/socketio/socket.io",
-    liveUrl: "https://socket.io/demos/chat",
-    featured: false
-  },
-  {
-    id: 5,
-    title: "App Mobile React Native",
-    description: "Application mobile cross-platform avec authentification biométrique, notifications push et mode hors-ligne.",
-    image: portfolioProject,
-    technologies: ["React Native", "Expo", "AsyncStorage", "Push Notifications"],
-    githubUrl: "https://github.com/expo/expo",
-    liveUrl: "https://snack.expo.dev",
-    featured: false
-  },
-  {
-    id: 6,
-    title: "Assistant IA Conversationnel",
-    description: "Chatbot intelligent avec traitement du langage naturel, mémoire contextuelle et intégration API OpenAI.",
-    image: chatProject,
-    technologies: ["Python", "OpenAI", "FastAPI", "Vector DB", "LangChain"],
-    githubUrl: "https://github.com/langchain-ai/langchain",
-    liveUrl: "https://chat.openai.com",
-    featured: false
-  },
-  {
-    id: 7,
-    title: "Système de Monitoring",
-    description: "Dashboard de monitoring en temps réel avec alertes, métriques système et logs centralisés.",
-    image: dashboardProject,
-    technologies: ["Grafana", "Prometheus", "Docker", "Kubernetes", "Elasticsearch"],
-    githubUrl: "https://github.com/grafana/grafana",
-    liveUrl: "https://play.grafana.org/d/000000012/grafana-play-home",
-    featured: false
-  },
-  {
-    id: 8,
-    title: "Blockchain DApp",
-    description: "Application décentralisée sur Ethereum avec smart contracts, wallet integration et transactions sécurisées.",
-    image: ecommerceProject,
-    technologies: ["Solidity", "Web3.js", "Ethereum", "MetaMask", "Hardhat"],
-    githubUrl: "https://github.com/ethereum/web3.js",
-    liveUrl: "https://remix.ethereum.org",
     featured: false
   },
   {
@@ -119,7 +69,7 @@ const projects = [
     image: taskManagerProject,
     technologies: ["React", "TypeScript", "Local Storage", "Drag & Drop"],
     githubUrl: "#",
-    liveUrl: "/task-app",
+    liveUrl: "/",
     featured: false
   },
   {
